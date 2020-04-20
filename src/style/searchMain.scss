@@ -1,0 +1,102 @@
+@import './variables';
+
+.search-box {
+    display: flex;
+    height: 50px;
+    width: 70%;
+    position: relative;
+    z-index: 99;
+    &__select {
+
+        &-btn {
+            background-color: #ededed;
+            height: 100%;
+            line-height: 2.5rem;
+            font-size: .9625rem;
+            border-radius: 0 3px 3px 0;
+            display: flex;
+            z-index: 1;
+            color: rgba(0,0,0,.87);
+            position: relative;
+            border: 1px solid #bdbdbd;
+            cursor: pointer;
+            outline: none;
+            width: 200px;
+            padding: 0 10px;
+            justify-content: space-between;
+    
+            &-icon {
+                align-self: center;
+                font-size: 20px;
+            }
+    
+           
+        }
+    
+        &-items {
+            transform: scaleY(0);
+            transition: all 0.3s;
+            position: absolute;
+            top: 100%;
+            list-style: none;
+            width: 200px;
+            box-shadow: 0 0 1px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.2);
+            transform-origin: top center;
+            
+        }
+
+        &-item {
+            color: rgba(0,0,0,.87);
+            font-size: .9rem;
+            padding: 10px;
+            color: #424242;
+            line-height: 1.5;
+            height: 40px;
+            width: 100%;
+            text-align: right;
+            cursor: pointer;
+            background: #fafafa;
+            width: 200px;
+
+            &:hover {
+                background: #ededed;
+            }
+
+            div {
+                background: #fff;
+                display: inline-block;
+                position: absolute;
+                top: 0;
+                right: 202px;
+                width: 100%;
+            }
+        }
+    }
+
+    &__search {
+        width: 100%;
+
+        &-input {
+            width: 100%;
+            height: 50px;
+            border-radius: 3px 0px 0px 3px;
+            border: 1px solid #bdbdbd;
+            border-right: none;
+            padding: 10px;
+
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+  
+}
+
+.select-items-open {
+    transform: scaleY(1);
+    visibility: visible;
+    -webkit-transform: scaleY(1);
+    transition: all 0.3s;
+    top: 100%;
+
+}

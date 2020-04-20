@@ -1,0 +1,22 @@
+@import './variables';
+
+.tag-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-tag {
+    padding: 4px 12px;
+    margin: 15px 7px;
+    border: solid 1px $primaryColor;
+    display: inline-block;
+    color: $primaryColor;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 13px;
+
+    &:hover {
+        background: $primaryColor;
+        color: #fff;
+    }
+}

@@ -1,0 +1,80 @@
+@import './variables';
+
+.open-modal-btn {
+    color: rgba(0, 0, 0, 0.87);
+    padding: 5px 20px;
+    font-size: 0.875rem;
+    min-width: 64px;
+    box-sizing: border-box;
+    font-weight: 500;
+    line-height: 1.75;
+    border-radius: 4px;
+    letter-spacing: 0.02857em;
+    text-transform: uppercase;
+    border: 1px solid rgba(0, 0, 0, 0.23);
+    align-self: center;
+    background-color: transparent;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-right: 25px;
+
+    &:focus {
+        outline: none;
+    }
+
+    &:hover {
+        background: #eee;
+    }
+}
+
+.modal-box {
+    width: 70%;
+    background: $whiteColor;
+    border: none;
+    box-shadow: none;
+    padding: 30px
+}
+
+.modal-box__content {
+    &-search{
+        border: 1px solid rgba(34,36,38,.15);
+        margin: 20px 0;
+
+        
+    }
+
+    &-cities{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+
+        button {
+            width: calc(20% - 20px);
+            margin: 10px;
+        }
+    }
+
+    &-title {
+        color: $darkColor;
+        margin-bottom: 15px;
+    }
+    
+}
+
+.city-button {
+    outline: none;
+    height: 40px;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 3px;
+    background-color: transparent;
+    color: $primaryColor;
+    border: 1px solid $primaryColor;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+        background-color: $primaryColor;
+        color: $whiteColor;
+    }
+}

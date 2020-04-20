@@ -1,0 +1,82 @@
+.single-item {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 50px;
+
+    &__discription {
+        width: 40%;
+        padding-left: 80px;
+
+        &-title {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        &-normal-text {
+            color: rgba(0,0,0,.56);
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+
+        &-btn {
+            display: flex;
+            margin-bottom: 20px;
+
+            button{
+                padding: 10px;
+                margin: 5px;
+                border-radius: 4px;
+                font-size: 15px;
+                cursor: pointer;
+            }
+
+            &-contact {
+                color: $whiteColor;
+                background-color: $primaryColor;
+                border: solid 1px $primaryColor;
+                margin-right: 0 !important;
+            }
+
+            &-chat {
+                color: $darkColor;
+                background: none;
+                border: solid 1px $darkColor;
+                margin-right: 0 !important;
+                justify-items: center;
+                display: flex;
+
+                svg {
+                    padding-left: 5px;
+                    font-size: 20px;
+                }
+            }
+
+            &-bokmark {
+                color: $darkColor;
+                background: none;
+                border: solid 1px $darkColor;
+                margin-right: 20px !important;
+            }
+        }
+
+        &-item {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 14px 0;
+            font-size: 16px;
+            color: $darkColor;
+            border-bottom: 1px solid rgba(0,0,0,.08);
+        }
+    }
+
+    &__img {
+        width: 40%;
+
+        img {
+            width: 100%;
+        }
+    }
+}
